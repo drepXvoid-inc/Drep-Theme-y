@@ -1,0 +1,10 @@
+# Starship prompt
+eval "$(starship init zsh)"
+
+# Auto neofetch
+neofetch
+
+# Alias biar enak
+alias cls="clear"
+alias ll="ls -la"
+alias gs="git status"
