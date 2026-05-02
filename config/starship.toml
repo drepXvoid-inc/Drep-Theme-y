@@ -1,16 +1,24 @@
 add_newline = true
 
-[character]
-success_symbol = "[➜](bold green)"
-error_symbol = "[✗](bold red)"
-
-[directory]
-style = "cyan bold"
-
-[git_branch]
-symbol = "🌱 "
-style = "purple"
+format = """
+[┌─](bold green)$username$hostname$directory$git_branch
+[└─➤](bold green) """
 
 [username]
-style_user = "blue bold"
+style_user = "bold green"
 show_always = true
+
+[hostname]
+style = "bold green"
+ssh_only = false
+
+[directory]
+style = "bold cyan"
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[character]
+success_symbol = "[➤](bold green)"
+error_symbol = "[✖](bold red)"
